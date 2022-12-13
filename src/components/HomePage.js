@@ -40,7 +40,7 @@ import firebase from './Fire'
     render(){
         return(
           <div className='container'>
-        This is Home of Online Serve
+        This is Home of Online Serve and serve 
 
         <input type='text' placeholder='Type Your Name' name='name' onChange={this.changeHandler}/>
         <button onClick={this.saveValue}>save</button>
