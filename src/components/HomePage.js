@@ -34,12 +34,25 @@ import firebase from './Fire'
 
   saveValue=()=>{
     firebase.database().ref('partyList').set({name: this.state.name})
+
+    alert('Successfully saved....!')
+
+    console.log(this.state.name)
   }
   
 
     render(){
         return(
-          <div className='container'>
+          <div className='container' style={{backgroundColor:'#f2f2f2'}}>
+          <div style={{fontSize:'200%', textAlign:'center', backgroundColor:'lightyellow', color:'green'}}>  <i className="material-icons" style={{fontSize:'110%', color:'goldenrod'}} >brightness_low</i> Mansoorabad Digital Market <i className="material-icons" style={{fontSize:'110%', color:'goldenrod'}} >brightness_low</i> </div>
+<br/>
+              <div style={{border:'1px solid gray', backgroundColor:'white', width:'50%', height:'150px', margin:'auto', textAlign:'center', color:'red', fontSize:'30px', borderRadius:'18px'}}>
+                Services 
+              </div>
+        
+        
+        
+        
         This is Home of Online Serve and serve 
 
         <input type='text' placeholder='Type Your Name' name='name' onChange={this.changeHandler}/>
